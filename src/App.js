@@ -25,28 +25,24 @@ export default class App extends Component {
     };
     const updatedItems = [...this.state.items, newItem];
 
-    this.setState(
-      {
-        items: updatedItems,
-        item: "",
-        id: uuidv4(),
-        editItem: false,
-      },
-      () => console.log(this.state)
-    );
+    this.setState({
+      items: updatedItems,
+      item: "",
+      id: uuidv4(),
+      editItem: false,
+    });
   };
   clearList = (e) => {
     console.log("clearList");
   };
-  handleDelete = (e) => {
-    console.log("handleDelete");
+  handleDelete = (id) => {
+    console.log(`handleDelete ${id}`);
   };
-  handleEdit = (e) => {
-    console.log("handleEdit");
+  handleEdit = (id) => {
+    console.log(`handleEdit ${id}`);
   };
 
   render() {
-    // console.log(this.state);
     return (
       <div className="container">
         <div className="row">
