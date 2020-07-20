@@ -10,10 +10,24 @@ Todo App helps manage the list of items to be planned and done and later delete 
 
 ![OTT Overview](/public/todo.png)
 
-## To run
 
-- Clone the repo
-- Navigate to inside the project folder on terminal, where I would hopefully see a package.json file
-- Do an **npm install** for installing all the project dependencies
-- Do an **npm install -g nodemon** for installing all the project dependencies
-- Then **npm start** OR **node app.js** OR **nodemon app.js** to get the app running on local host
+### Installation Steps
+1. Clone the repository
+```bash
+git clone https://github.com/Pratyush2710/To-Do-App.git
+```
+2. Change the working directory
+```bash
+cd To-Do-App
+```
+3. Install dependencies
+```bash
+npm install
+```
+4. Run the app
+```bash
+npm start
+```
+🌟 You are all set!
+
+
